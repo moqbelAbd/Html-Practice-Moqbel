@@ -108,5 +108,240 @@ Video element :
 <iframe width="600" height="450" src="https://www.youtube-nocookie.com/embed/l0qvxPPISuY?si=vVwZfH_DhDH8IHwW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6769.208624083957!2d35.91032607024731!3d31.971629730116323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca12ce1b9c62b%3A0x21b9b701f3f4ee86!2sOrange%20Coding%20Academy!5e0!3m2!1sar!2sjo!4v1782502749073!5m2!1sar!2sjo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
+<h1>
+    this is sction 4 <br>
+</h1>
+
+<h2>4.1</h2>
+<p>In this section we will talk about forms and inputs. Forms are used when we want to take data from the user.</p>
+
+<form action="#" method="post" target="_blank" autocomplete="on">
+
+    <p>Text input is used for normal text like name or username.</p>
+    <input type="text" placeholder="Enter your name">
+
+    <p>Password input is used for passwords and it hides the letters while typing.</p>
+    <input type="password" placeholder="Enter your password">
+
+    <p>Email input is used when we want the user to enter an email.</p>
+    <input type="email" placeholder="example@email.com">
+
+    <p>Number input is used for numbers only.</p>
+    <input type="number" placeholder="Enter your age">
+
+    <p>Date input lets the user choose a date.</p>
+    <input type="date">
+
+    <p>Radio input is used when the user must choose one option.</p>
+    <input type="radio" name="level" value="beginner"> Beginner
+    <input type="radio" name="level" value="advanced"> Advanced
+
+    <p>Checkbox input is used when the user can choose more than one thing.</p>
+    <input type="checkbox" value="html"> HTML
+    <input type="checkbox" value="css"> CSS
+
+    <p>File input is used to upload a file from the device.</p>
+    <input type="file">
+
+</form>
+
+<h2>4.2</h2>
+<p>Now let's explain some elements that we use inside forms.</p>
+
+<form>
+
+    <p>Label gives a name for the input so the user can understand what to write.</p>
+    <label>Full Name:</label>
+    <input type="text" placeholder="Full name">
+
+    <p>Select is used to make a drop down list.</p>
+    <select>
+        <option>Jordan</option>
+        <option>Palestine</option>
+        <option>Egypt</option>
+    </select>
+
+    <p>Textarea is used when the user needs to write a longer text.</p>
+    <textarea rows="4" cols="30" placeholder="Write your message"></textarea>
+
+    <p>Button is used to create a clickable button.</p>
+    <button type="button">Click Me</button>
+
+    <p>Fieldset is used to group related inputs together, and legend gives this group a title.</p>
+    <fieldset>
+        <legend>Login Info</legend>
+
+        <label>Username:</label>
+        <input type="text">
+
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password">
+    </fieldset>
+
+    <p>Datalist gives suggestions while the user is typing.</p>
+    <input list="courses" placeholder="Choose course">
+
+    <datalist id="courses">
+        <option value="HTML">
+        <option value="CSS">
+        <option value="JavaScript">
+    </datalist>
+
+    <p>Option is the choices inside select or datalist.</p>
+
+    <p>Optgroup is used to group options inside the select list.</p>
+    <select>
+        <optgroup label="Frontend">
+            <option>HTML</option>
+            <option>CSS</option>
+        </optgroup>
+
+        <optgroup label="Backend">
+            <option>PHP</option>
+            <option>Node.js</option>
+        </optgroup>
+    </select>
+
+</form>
+
+<h2>4.3</h2>
+<p>Form attributes controls how the form works.</p>
+
+<p>Action is the place where the form data will be sent.</p>
+<p>Method is how the data will be sent, like get or post.</p>
+<p>Target controls where the result will open after submit.</p>
+<p>Autocomplete helps the browser remember information the user wrote before.</p>
+
+<form action="#" method="get" target="_blank" autocomplete="on">
+    <input type="text" placeholder="Example about form attributes">
+    <button type="submit">Submit</button>
+</form>
+
+<h2>4.4</h2>
+<p>Now lets talk about some input attributes.</p>
+
+<p>Value gives the input a default value.</p>
+<input type="text" value="Orange">
+
+<p>Readonly means the user can read the value but can not change it.</p>
+<input type="text" value="This is readonly" readonly>
+
+<p>Disabled means the input is not active and the user can not use it.</p>
+<input type="text" value="This is disabled" disabled>
+
+<p>Size changes the width of the input.</p>
+<input type="text" size="35" placeholder="This input has size 35">
+
+<p>Maxlength controls the maximum number of letters.</p>
+<input type="text" maxlength="10" placeholder="Max 10 letters">
+
+<p>Min and max are used with numbers to put a limit.</p>
+<input type="number" min="1" max="100" placeholder="From 1 to 100">
+
+<p>Multiple allows the user to choose more than one file.</p>
+<input type="file" multiple>
+
+<p>Placeholder shows a small hint inside the input.</p>
+<input type="text" placeholder="Enter your username">
+
+<p>Required means this input must be filled before submitting the form.</p>
+<input type="email" placeholder="Required email" required>
+```html
+<h1>
+    this is sction 5 <br>
+</h1>
+
+<h2>5.1</h2>
+<p>In HTML there are many common attributes that we use almost every time.</p>
+
+<p>The href attribute is used with links to go to another page or website.</p>
+<a href="https://www.google.com" target="_blank">Visit Google</a>
+
+<p>The src attribute tells the browser where to find the image or media file.</p>
+<img src="Images/Image.webp" alt="Example Image" width="120" height="120">
+
+<p>The width attribute changes the width of the image.</p>
+<p>The height attribute changes the height of the image.</p>
+
+<h2>5.2</h2>
+<p>Now let's explain the difference between div and span.</p>
+
+<p>Div is a block element, so it starts on a new line.</p>
+
+<div>This is the first div.</div>
+<div>This is the second div.</div>
+
+<br>
+
+<p>Span is an inline element, so it stays in the same line.</p>
+
+<span>This is span one.</span>
+<span>This is span two.</span>
+<strong>This is strong.</strong>
+
+<p>As we can see, div starts on a new line while span stays next to other inline elements.</p>
+
+<h2>5.3</h2>
+<p>Semantic tags help us organize the page and make the code easier to understand.</p>
+
+<header>
+    <h3>Website Header</h3>
+</header>
+
+<nav>
+    <a href="#">Home</a> |
+    <a href="#">About</a> |
+    <a href="#">Contact</a>
+</nav>
+
+<section>
+
+    <article>
+
+        <h3>HTML Article</h3>
+
+        <p>This article is inside the section element.</p>
+
+    </article>
+
+</section>
+
+<aside>
+
+    <p>This is an aside section. It can contain extra information.</p>
+
+</aside>
+
+<footer>
+
+    <p>Copyright 2026</p>
+
+</footer>
+
+<h2>5.4</h2>
+
+<p>Semantic HTML is important because it makes the page easier to read and organize.</p>
+
+<p>It also helps search engines and screen readers understand the page better.</p>
+
+<p>Example of semantic layout:</p>
+
+<header>Header</header>
+
+<nav>Navigation</nav>
+
+<section>
+
+    <article>Main Content</article>
+
+</section>
+
+<aside>Sidebar</aside>
+
+<footer>Footer</footer>
+```
+
 </body>
 </html>
